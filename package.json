@@ -1,0 +1,24 @@
+{
+  "name": "userpagebot-irc",
+  "version": "1.0.0",
+  "description": "Reads edit feeds from Fandom's wikis and discussions feed and passes them to my userpage creation API. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tya/userpagebot-irc.git"
+  },
+  "author": "TyA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tya/userpagebot-irc/issues"
+  },
+  "homepage": "https://github.com/tya/userpagebot-irc#readme",
+  "dependencies": {
+    "irc": "^0.5.2",
+    "needle": "^2.4.1",
+    "nodemon": "^2.0.4"
+  }
+}
