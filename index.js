@@ -40,11 +40,11 @@ client.addListener('message#discussionsfeed', function (from, to, message) {
       var user = parsed.userName;
       var url = parsed.url;
 
-      needle('post', 'localhost:3000/api/create/',
+      needle('post', config.userpagesite + '/api/create/',
             { // form data
               user: user,
               url: url,
-              apikey: 'abcdefg'
+              apikey: config.apikey
             },
             options
           ).then(function(response) {
@@ -80,11 +80,11 @@ client.addListener('message#rc', function (from, to, message) {
     var user = match[2];
     var url = match[1];
 
-    needle('post', 'localhost:3000/api/create/',
+    needle('post', config.userpagesite + '/api/create/',
           { // form data
             user: user,
             url: url,
-            apikey: 'abcdefg'
+            apikey: config.apikey
           },
           options
       ).then(function(response) {
