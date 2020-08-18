@@ -32,9 +32,7 @@ client.addListener("error", function(message) {
 
 client.addListener('message#discussionsfeed', function (from, to, message) {
     //console.log('discussionsfeed: ' + from + ' => ' + to + ': ' + message);
-    return;
-    message = message.args[1];
-    console.log(message);
+
     try {
       var parsed = JSON.parse(message);
       var user = parsed.userName;
